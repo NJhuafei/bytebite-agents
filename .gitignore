@@ -1,0 +1,14 @@
+# Environment & secrets (NEVER commit .env!)
+.env
+.env.*
+!.env.example
+
+# Python & tooling
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+dist/
+*.egg-info/
+.DS_Store

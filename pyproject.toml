@@ -1,0 +1,22 @@
+[project]
+name = "bytebite-agents"
+version = "0.1.0"
+description = "ByteBite Multimodal Multi-Agent AI Engineering Course (Gemini 4 + LangGraph)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain-core>=0.3.0",
+    "langchain-google-genai>=2.1.0",
+    "langgraph>=0.2.50",
+    "pydantic>=2.8.0",
+    "python-dotenv>=1.0.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
